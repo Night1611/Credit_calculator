@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2016
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Credit_calculator", "Credit_calculator\Credit_calculator.csproj", "{EB9273F4-B8A4-4268-A5AD-95F7D7FF3B49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB9273F4-B8A4-4268-A5AD-95F7D7FF3B49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB9273F4-B8A4-4268-A5AD-95F7D7FF3B49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB9273F4-B8A4-4268-A5AD-95F7D7FF3B49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB9273F4-B8A4-4268-A5AD-95F7D7FF3B49}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CBE5A081-8971-4153-80C5-D13700D1DAFA}
+	EndGlobalSection
+EndGlobal
