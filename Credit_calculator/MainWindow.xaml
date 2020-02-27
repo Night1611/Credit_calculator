@@ -5,8 +5,80 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Credit_calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="华南理工大学 数学学院 学分计算器 Ver1.2  当前班级：17应数" Height="424.4" Width="792.8" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="100,33,0,0" TextWrapping="Wrap" Text="通选课：" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="158,33,0,0" TextWrapping="Wrap" Text="人文科学领域" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="235,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="社会科学领域"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="88,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="学分要求"/><Run Text="："/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="88,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="已修学分"/><Run Text="："/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="88,94,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="剩余"/><Run Text="学分"/><Run Text="："/></TextBlock>
+        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="185,53,0,0" TextWrapping="Wrap" Text="6.0" VerticalAlignment="Top" RenderTransformOrigin="0.077,0.597"/>
+        <TextBlock x:Name="textBlock1_Copy1" HorizontalAlignment="Left" Margin="263,52,0,0" TextWrapping="Wrap" Text="4.0" VerticalAlignment="Top" RenderTransformOrigin="11.708,0.651"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="15" Margin="166,73,0,0" TextWrapping="Wrap" Text="0.0" VerticalAlignment="Top" Width="55" TextChanged="textBox_TextChanged" HorizontalContentAlignment="Center"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="15" Margin="244,73,0,0" TextWrapping="Wrap" Text="0.0" VerticalAlignment="Top" Width="55" HorizontalContentAlignment="Center" TextChanged="textBox_Copy_TextChanged"/>
+        <TextBlock x:Name="textBlock1_Copy2" HorizontalAlignment="Left" Margin="185,94,0,0" TextWrapping="Wrap" Text="6.0" VerticalAlignment="Top" RenderTransformOrigin="0.077,0.597"/>
+        <TextBlock x:Name="textBlock1_Copy3" HorizontalAlignment="Left" Margin="263,94,0,0" TextWrapping="Wrap" Text="4.0" VerticalAlignment="Top" RenderTransformOrigin="11.708,0.651"/>
+        <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="76,127,0,0" TextWrapping="Wrap" Text="学科基础课：" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy4" HorizontalAlignment="Left" Margin="88,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="学分要求"/><Run Text="："/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy5" HorizontalAlignment="Left" Margin="88,169,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="已修学分"/><Run Text="："/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy6" HorizontalAlignment="Left" Margin="88,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="剩余"/><Run Text="学分"/><Run Text="："/></TextBlock>
+        <TextBlock x:Name="textBlock1_Copy4" HorizontalAlignment="Left" Margin="158,149,0,0" TextWrapping="Wrap" Text="12.0" VerticalAlignment="Top" RenderTransformOrigin="0.077,0.597"/>
+        <TextBlock x:Name="textBlock1_Copy5" HorizontalAlignment="Left" Margin="158,190,0,0" TextWrapping="Wrap" Text="12.0" VerticalAlignment="Top" RenderTransformOrigin="0.077,0.597"/>
+        <TextBlock x:Name="textBlock1_Copy6" HorizontalAlignment="Left" Margin="158,169,0,0" TextWrapping="Wrap" Text="0.0" VerticalAlignment="Top" RenderTransformOrigin="0.077,0.597"/>
+        <CheckBox x:Name="checkBox" Content="数据结构(4.0)" HorizontalAlignment="Left" Margin="211,149,0,0" VerticalAlignment="Top" Checked="checkBox_Checked" Unchecked="checkBox_Unchecked"/>
+        <CheckBox x:Name="checkBox_Copy" Content="运筹学(4.0)" HorizontalAlignment="Left" Margin="211,169,0,0" VerticalAlignment="Top" Checked="checkBox_Checked" Unchecked="checkBox_Unchecked"/>
+        <CheckBox x:Name="checkBox_Copy1" Content="数值分析(4.0)" HorizontalAlignment="Left" Margin="211,190,0,0" VerticalAlignment="Top" Checked="checkBox_Checked" Unchecked="checkBox_Unchecked"/>
+        <CheckBox x:Name="checkBox_Copy2" Content="泛函分析(4.0)" HorizontalAlignment="Left" Margin="319,149,0,0" VerticalAlignment="Top" Checked="checkBox_Checked" Unchecked="checkBox_Unchecked"/>
+        <CheckBox x:Name="checkBox_Copy3" Content="随机过程(4.0)" HorizontalAlignment="Left" Margin="319,169,0,0" VerticalAlignment="Top" Checked="checkBox_Checked" Unchecked="checkBox_Unchecked"/>
+        <CheckBox x:Name="checkBox_Copy4" Content="多元统计分析(4.0)" HorizontalAlignment="Left" Margin="319,189,0,0" VerticalAlignment="Top" Checked="checkBox_Checked" Unchecked="checkBox_Unchecked"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="8,28,0,0" TextWrapping="Wrap" Text="未达标" VerticalAlignment="Top" FontFamily="迷你简超粗黑" FontSize="18"/>
+        <TextBlock x:Name="textBlock3_Copy" HorizontalAlignment="Left" Margin="10,125,0,0" TextWrapping="Wrap" Text="未达标" VerticalAlignment="Top" FontFamily="迷你简超粗黑" FontSize="18"/>
+        <TextBlock x:Name="textBlock_Copy7" HorizontalAlignment="Left" Margin="76,222,0,0" TextWrapping="Wrap" Text="专业领域课：" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy8" HorizontalAlignment="Left" Margin="88,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="学分要求"/><Run Text="："/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy9" HorizontalAlignment="Left" Margin="88,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="已修学分"/><Run Text="："/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy10" HorizontalAlignment="Left" Margin="88,283,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="剩余"/><Run Text="学分"/><Run Text="："/></TextBlock>
+        <TextBlock x:Name="textBlock1_Copy7" HorizontalAlignment="Left" Margin="158,243,0,0" TextWrapping="Wrap" Text="16.0" VerticalAlignment="Top" RenderTransformOrigin="0.077,0.597"/>
+        <TextBlock x:Name="textBlock1_Copy8" HorizontalAlignment="Left" Margin="158,285,0,0" TextWrapping="Wrap" Text="16.0" VerticalAlignment="Top" RenderTransformOrigin="0.077,0.597"/>
+        <TextBlock x:Name="textBlock1_Copy9" HorizontalAlignment="Left" Margin="158,263,0,0" TextWrapping="Wrap" Text="0.0" VerticalAlignment="Top" RenderTransformOrigin="0.077,0.597"/>
+        <CheckBox x:Name="checkBox_Copy5" Content="点集拓扑学(4.5)" HorizontalAlignment="Left" Margin="211,243,0,0" VerticalAlignment="Top" Checked="checkBox_Copy5_Checked" Unchecked="checkBox_Copy5_Unchecked"/>
+        <CheckBox x:Name="checkBox_Copy6" Content="数理逻辑(2.0)" HorizontalAlignment="Left" Margin="211,263,0,0" VerticalAlignment="Top" Checked="checkBox_Copy5_Checked" Unchecked="checkBox_Copy5_Unchecked"/>
+        <CheckBox x:Name="checkBox_Copy7" Content="微分几何(4.5)" HorizontalAlignment="Left" Margin="211,284,0,0" VerticalAlignment="Top" Checked="checkBox_Copy5_Checked" Unchecked="checkBox_Copy5_Unchecked"/>
+        <CheckBox x:Name="checkBox_Copy8" Content="操作系统(4.0)" HorizontalAlignment="Left" Margin="342,243,0,0" VerticalAlignment="Top" Checked="checkBox_Copy5_Checked" Unchecked="checkBox_Copy5_Unchecked"/>
+        <CheckBox x:Name="checkBox_Copy9" Content="数学模型(3.0)" HorizontalAlignment="Left" Margin="342,264,0,0" VerticalAlignment="Top" Checked="checkBox_Copy5_Checked" Unchecked="checkBox_Copy5_Unchecked"/>
+        <CheckBox x:Name="checkBox_Copy10" Content="微分方程定性方法与数值模拟(4.0)" HorizontalAlignment="Left" Margin="464,285,0,0" VerticalAlignment="Top" Checked="checkBox_Copy5_Checked" Unchecked="checkBox_Copy5_Unchecked"/>
+        <TextBlock x:Name="textBlock3_Copy1" HorizontalAlignment="Left" Margin="10,219,0,0" TextWrapping="Wrap" Text="未达标" VerticalAlignment="Top" FontFamily="迷你简超粗黑" FontSize="18"/>
+        <CheckBox x:Name="checkBox_Copy11" Content="算法设计与分析(4.0)" HorizontalAlignment="Left" Margin="211,306,0,0" VerticalAlignment="Top" Checked="checkBox_Copy5_Checked" Unchecked="checkBox_Copy5_Unchecked"/>
+        <CheckBox x:Name="checkBox_Copy12" Content="微分方程数值解(3.0)" HorizontalAlignment="Left" Margin="211,326,0,0" VerticalAlignment="Top" Checked="checkBox_Copy5_Checked" Unchecked="checkBox_Copy5_Unchecked"/>
+        <CheckBox x:Name="checkBox_Copy13" Content="统计软件(2.5)" HorizontalAlignment="Left" Margin="211,347,0,0" VerticalAlignment="Top" Checked="checkBox_Copy5_Checked" Unchecked="checkBox_Copy5_Unchecked"/>
+        <CheckBox x:Name="checkBox_Copy14" Content="测度论(4.0)" HorizontalAlignment="Left" Margin="342,306,0,0" VerticalAlignment="Top" Checked="checkBox_Copy5_Checked" Unchecked="checkBox_Copy5_Unchecked"/>
+        <CheckBox x:Name="checkBox_Copy15" Content="计算机网络(3.0)" HorizontalAlignment="Left" Margin="342,327,0,0" VerticalAlignment="Top" Checked="checkBox_Copy5_Checked" Unchecked="checkBox_Copy5_Unchecked"/>
+        <CheckBox x:Name="checkBox_Copy16" Content="数学分析选讲(2.0)" HorizontalAlignment="Left" Margin="342,347,0,0" VerticalAlignment="Top" Checked="checkBox_Copy5_Checked" Unchecked="checkBox_Copy5_Unchecked"/>
+        <CheckBox x:Name="checkBox_Copy17" Content="高等代数与解析几何选讲(2.0)" HorizontalAlignment="Left" Margin="464,243,0,0" VerticalAlignment="Top" Checked="checkBox_Copy5_Checked" Unchecked="checkBox_Copy5_Unchecked"/>
+        <CheckBox x:Name="checkBox_Copy18" Content="数学软件与数学实验(2.0)" HorizontalAlignment="Left" Margin="464,264,0,0" VerticalAlignment="Top" Checked="checkBox_Copy5_Checked" Unchecked="checkBox_Copy5_Unchecked"/>
+        <CheckBox x:Name="checkBox_Copy19" Content="数理金融(3.0)" HorizontalAlignment="Left" Margin="343,284,0,0" VerticalAlignment="Top" Checked="checkBox_Copy5_Checked" Unchecked="checkBox_Copy5_Unchecked"/>
+        <CheckBox x:Name="checkBox_Copy20" Content="统计学习与智能处理方法(3.0)" HorizontalAlignment="Left" Margin="464,306,0,0" VerticalAlignment="Top" Checked="checkBox_Copy5_Checked" Unchecked="checkBox_Copy5_Unchecked"/>
+        <CheckBox x:Name="checkBox_Copy21" Content="计算智能(4.0)" HorizontalAlignment="Left" Margin="464,327,0,0" VerticalAlignment="Top" Checked="checkBox_Copy5_Checked" Unchecked="checkBox_Copy5_Unchecked"/>
+        <CheckBox x:Name="checkBox_Copy22" Content="面向对象程序设计(3.5)" HorizontalAlignment="Left" Margin="464,347,0,0" VerticalAlignment="Top" Checked="checkBox_Copy5_Checked" Unchecked="checkBox_Copy5_Unchecked"/>
+        <TextBlock x:Name="textBlock_Copy11" HorizontalAlignment="Left" Margin="433,32,0,0" TextWrapping="Wrap" Text="课程设计：" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock_Copy12" HorizontalAlignment="Left" Margin="433,52,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="学分要求"/><Run Text="："/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy13" HorizontalAlignment="Left" Margin="433,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="已修学分"/><Run Text="："/></TextBlock>
+        <TextBlock x:Name="textBlock_Copy14" HorizontalAlignment="Left" Margin="433,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top"><Run Text="剩余"/><Run Text="学分"/><Run Text="："/></TextBlock>
+        <TextBlock x:Name="textBlock1_Copy10" HorizontalAlignment="Left" Margin="503,53,0,0" TextWrapping="Wrap" Text="6.0" VerticalAlignment="Top" RenderTransformOrigin="0.077,0.597"/>
+        <TextBlock x:Name="textBlock1_Copy11" HorizontalAlignment="Left" Margin="503,93,0,0" TextWrapping="Wrap" Text="6.0" VerticalAlignment="Top" RenderTransformOrigin="0.077,0.597"/>
+        <TextBlock x:Name="textBlock1_Copy12" HorizontalAlignment="Left" Margin="503,73,0,0" TextWrapping="Wrap" Text="0.0" VerticalAlignment="Top" RenderTransformOrigin="0.077,0.597"/>
+        <CheckBox x:Name="checkBox_Copy23" Content="数据结构课程设计(2.0)" HorizontalAlignment="Left" Margin="540,53,0,0" VerticalAlignment="Top" Checked="checkBox_Copy23_Checked" Unchecked="checkBox_Copy23_Unloaded"/>
+        <CheckBox x:Name="checkBox_Copy24" Content="数学模型课程设计(2.0)" HorizontalAlignment="Left" Margin="540,73,0,0" VerticalAlignment="Top" Checked="checkBox_Copy23_Checked" Unchecked="checkBox_Copy23_Unloaded"/>
+        <CheckBox x:Name="checkBox_Copy25" Content="面向对象程序设计课程设计(3.0)" HorizontalAlignment="Left" Margin="540,94,0,0" VerticalAlignment="Top" Checked="checkBox_Copy23_Checked" Unchecked="checkBox_Copy23_Unloaded"/>
+        <CheckBox x:Name="checkBox_Copy26" Content="数值分析课程设计(2.0)" HorizontalAlignment="Left" Margin="539,156,0,0" VerticalAlignment="Top" Checked="checkBox_Copy23_Checked" Unchecked="checkBox_Copy23_Unloaded"/>
+        <CheckBox x:Name="checkBox_Copy27" Content="数据挖掘与统计决策课程设计(2.0)" HorizontalAlignment="Left" Margin="539,178,0,0" VerticalAlignment="Top" Checked="checkBox_Copy23_Checked" Unchecked="checkBox_Copy23_Unloaded"/>
+        <TextBlock x:Name="textBlock3_Copy2" HorizontalAlignment="Left" Margin="517,26,0,0" TextWrapping="Wrap" Text="未达标" VerticalAlignment="Top" FontFamily="迷你简超粗黑" FontSize="18"/>
+        <CheckBox x:Name="checkBox_Copy28" Content="统计学习与智能处理方法课程设计(2.0)" HorizontalAlignment="Left" Margin="540,116,0,0" VerticalAlignment="Top" Checked="checkBox_Copy23_Checked" Unchecked="checkBox_Copy23_Unloaded"/>
+        <CheckBox x:Name="checkBox_Copy29" Content="微分方程数值解课程设计(2.0)" HorizontalAlignment="Left" Margin="540,136,0,0" VerticalAlignment="Top" Checked="checkBox_Copy23_Checked" Unchecked="checkBox_Copy23_Unloaded"/>
+        <Button x:Name="button" Content="关于" HorizontalAlignment="Left" Margin="35,348,0,0" VerticalAlignment="Top" Width="113" Click="button_Click"/>
+        <Button x:Name="button1" Content="选择其他班级" HorizontalAlignment="Left" Margin="35,322,0,0" VerticalAlignment="Top" Width="113" Click="button1_Click"/>
+
+
+
     </Grid>
 </Window>

@@ -1,0 +1,13 @@
+﻿<Window x:Class="Credit_calculator.About"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Credit_calculator"
+        mc:Ignorable="d"
+        Title="关于" Height="249.245" Width="563.516" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid Margin="0,0,0,-19.4">
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="216" Width="518" FontSize="18"><Run Text="       本程序仅用于计算华南理工大学数学学院 2017级班级毕业所需学分要求。所选数据来源于"/><Run Text="："/><Run Text="数学学院（定稿）2017级培养计划文件。"/><Run Text="若出现因修读课程或其他原因无法正常毕业，本程序不负有任何责任。"/><LineBreak/><Run/><LineBreak/><Run Text="      By Night_Wso   2020.02.2"/><Run Text="7"/><LineBreak/><Run/><Run/><LineBreak/><Run Text="      详见https://github.com/Night1611/Credit_calculator/"/><LineBreak/></TextBlock>
+
+    </Grid>
+</Window>

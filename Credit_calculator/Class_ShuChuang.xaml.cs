@@ -10,15 +10,15 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace Credit_calculator {
 	/// <summary>
-	/// MainWindow.xaml 的交互逻辑
+	/// Class_ShuChuang.xaml 的交互逻辑
 	/// </summary>
-	public partial class MainWindow : Window {
-		public MainWindow() {
+	public partial class Class_ShuChuang : Window {
+
+		public Class_ShuChuang() {
 			InitializeComponent();
 		}
 
@@ -48,7 +48,7 @@ namespace Credit_calculator {
 					number = 0;
 				}
 				textBlock1_Copy3.Text = number.ToString("#0.0");
-				if (textBlock1_Copy2.Text=="0.0" && textBlock1_Copy3.Text == "0.0") {
+				if (textBlock1_Copy2.Text == "0.0" && textBlock1_Copy3.Text == "0.0") {
 					textBlock3.Text = ("已达标");
 				}
 				else {
@@ -60,63 +60,25 @@ namespace Credit_calculator {
 			}
 		}
 
-		private void checkBox_Checked(object sender, RoutedEventArgs e) {
-			double sum = 0;
-			if (checkBox.IsChecked == true) {
-				sum += 4;
-			}
-			if (checkBox_Copy.IsChecked == true) {
-				sum += 4;
-			}
-			if (checkBox_Copy1.IsChecked == true) {
-				sum += 4;
-			}
-			if (checkBox_Copy2.IsChecked == true) {
-				sum += 4;
-			}
-			if (checkBox_Copy3.IsChecked == true) {
-				sum += 4;
-			}
-			if (checkBox_Copy4.IsChecked==true) {
-				sum += 4;
-			}
-			textBlock1_Copy6.Text = sum.ToString("#0.0");
-			double res = 12 - sum;
-			if (res < 0) {
-				res = 0;
-			}
-			textBlock1_Copy5.Text = res.ToString("#0.0");
-			if (textBlock1_Copy5.Text == "0.0") {
-				textBlock3_Copy.Text = ("已达标");
-			}
-			else {
-				textBlock3_Copy.Text = ("未达标");
-			}
-		}
-
-		private void checkBox_Unchecked(object sender, RoutedEventArgs e) {
-			checkBox_Checked(sender, e);
-		}
-
 		private void checkBox_Copy5_Checked(object sender, RoutedEventArgs e) {
 			double sum = 0;
 			if (checkBox_Copy5.IsChecked == true) {
-				sum += 4.5;
+				sum += 4;
 			}
 			if (checkBox_Copy6.IsChecked == true) {
 				sum += 2;
 			}
 			if (checkBox_Copy7.IsChecked == true) {
-				sum += 4.5;
+				sum += 4;
 			}
 			if (checkBox_Copy8.IsChecked == true) {
-				sum += 4;
+				sum += 3.5;
 			}
 			if (checkBox_Copy9.IsChecked == true) {
-				sum += 3;
+				sum += 2;
 			}
 			if (checkBox_Copy10.IsChecked == true) {
-				sum += 4;
+				sum += 2.5;
 			}
 			if (checkBox_Copy11.IsChecked == true) {
 				sum += 4;
@@ -125,37 +87,32 @@ namespace Credit_calculator {
 				sum += 3;
 			}
 			if (checkBox_Copy13.IsChecked == true) {
-				sum += 2.5;
+				sum += 2;
 			}
 			if (checkBox_Copy14.IsChecked == true) {
-				sum += 4;
+				sum += 2;
 			}
 			if (checkBox_Copy15.IsChecked == true) {
-				sum += 3;
+				sum += 4;
 			}
 			if (checkBox_Copy16.IsChecked == true) {
-				sum += 2;
+				sum += 4;
 			}
 			if (checkBox_Copy17.IsChecked == true) {
-				sum += 2;
+				sum += 3;
 			}
 			if (checkBox_Copy18.IsChecked == true) {
-				sum += 2;
+				sum += 4;
 			}
 			if (checkBox_Copy19.IsChecked == true) {
-				sum += 3;
+				sum += 4;
 			}
 			if (checkBox_Copy20.IsChecked == true) {
 				sum += 3;
 			}
-			if (checkBox_Copy21.IsChecked == true) {
-				sum += 4;
-			}
-			if (checkBox_Copy22.IsChecked == true) {
-				sum += 3.5;
-			}
+
 			textBlock1_Copy9.Text = sum.ToString("#0.0");
-			double res = 16 - sum;
+			double res = 10 - sum;
 			if (res < 0) {
 				res = 0;
 			}
@@ -183,9 +140,6 @@ namespace Credit_calculator {
 			if (checkBox_Copy25.IsChecked == true) {
 				sum += 3;
 			}
-			if (checkBox_Copy26.IsChecked == true) {
-				sum += 2;
-			}
 			if (checkBox_Copy27.IsChecked == true) {
 				sum += 2;
 			}
@@ -196,7 +150,7 @@ namespace Credit_calculator {
 				sum += 2;
 			}
 			textBlock1_Copy12.Text = sum.ToString("#0.0");
-			double res = 6 - sum;
+			double res = 5 - sum;
 			if (res < 0) {
 				res = 0;
 			}
